@@ -5,3 +5,9 @@ The nginx.conf for the host nginx which functions as a proxy server and load bal
 ## Mappings
 
 - /jenkins/ is the jenkins instance
+
+## Usage
+
+    cp nginx.conf /etc/nginx/
+    sudo nginx -s restart
+    
