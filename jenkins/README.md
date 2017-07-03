@@ -6,6 +6,7 @@ It will save the configuration in a docker volume called `jenkins_home`.
 
 ## Usage
 
+    apt install docker.io
     cp docker.jenkins.service /lib/systemd/system/
     systemctl enable docker.jenkins.service
     systemctl start docker.jenkins.service
