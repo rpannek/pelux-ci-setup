@@ -27,3 +27,9 @@ Then you can open this jenkins instance in your browser and put this password th
     http://localhost:8080/jenkins/
     
 After that you can also set up a nginx instance as a proxy so you don't need the port number in the URL, but you don't need to do that on your development machine.
+
+## Plugins
+
+Normally we use the proposed plugins during installation and then add the following:
+
+- Copy Artifact Plugin
