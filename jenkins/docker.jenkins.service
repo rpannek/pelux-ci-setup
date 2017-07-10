@@ -9,7 +9,7 @@ Restart=always
 ExecStartPre=-/usr/bin/docker stop %n
 ExecStartPre=-/usr/bin/docker rm %n
 ExecStartPre=/usr/bin/docker pull jenkinsci/jenkins:lts
-ExecStart=/usr/bin/docker run --rm --name %n -p 8080:8080 --env JENKINS_OPTS="--prefix=/jenkins" -v jenkins_home:/var/jenkins_home jenkinsci/jenkins:lts
+ExecStart=/usr/bin/docker run --rm --name %n -p 8080:8080 --env JENKINS_OPTS="--prefix=/jenkins" -v jenkins_home:/var/jenkins_home -v /var/www/html:/var/www/html jenkinsci/jenkins:lts 
  
 [Install]
 WantedBy=multi-user.target
