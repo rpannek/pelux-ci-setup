@@ -4,6 +4,7 @@ In order to run a slave which the master can reach via SSH you still need to pre
 
     sudo apt install openjdk-8-jdk-headless
     sudo apt install docker.io
+    sudo apt install vagrant
     sudo useradd jenkins
     sudo usermod -aG docker jenkins
 
