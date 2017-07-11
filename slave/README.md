@@ -1,3 +1,12 @@
+# Running a public slave
+
+In order to run a slave which the master can reach via SSH you still need to prepare some things:
+
+    sudo apt install openjdk-8-jdk-headless
+    sudo apt install docker.io
+    sudo useradd jenkins
+    sudo usermod -aG docker jenkins
+
 # Running a private slave
 
 Sometimes it's necessary to run slaves from a private network. Then you need to run a java program which will connect to the master instead the master connecting to the slave. To do so, set up a now slave in Jenkins.
